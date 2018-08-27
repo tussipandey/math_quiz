@@ -1,0 +1,211 @@
+html{
+    height:100%;
+    background: radial-gradient(circle,white,blue);
+}
+#container{
+    height: 580px;
+    width: 400px;
+    background-color: lightgray;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 0px 20px blue;
+        '
+}
+#Score{
+    background-color: whitesmoke;
+    color: chocolate;
+    padding: 5px;
+    position: absolute;
+    left:450px;
+    box-shadow: 0px 4px ;
+}
+#highest{
+    background-color: snow;
+    color: chocolate;
+    padding: 5px;
+    position: absolute;
+    right:450px;
+    
+}
+#correct{
+    position: absolute;
+    left=100px;
+    background-color: blueviolet;
+    color: wheat;
+    padding: 10px;
+    display: none;
+    
+}
+#wrong{
+    position: absolute;
+    left=250px;
+    background-color: cadetblue;
+    color: wheat;
+    padding: 10px;
+    display: none;
+}
+#question{
+    width: 400px;
+    height: 150px;
+    margin: 50px auto 10px auto;
+    background-color: lightsteelblue;
+    text-align: center;
+    font-size: 40px;
+    font-family: fantasy;
+      border-radius: 5px;
+   
+        '
+}
+#instruction{
+    width: 450px;
+    height: 50px;
+    margin: 10px auto;
+    color: black;
+    font-weight: bold;
+    line-height: 45px;
+   
+}
+#choice{
+    width: 450px;
+    height: 100px;
+    margin: 5px auto;
+    
+}
+.box{
+    width: 80px;
+    height: 80px;
+    background-color: azure;
+    float: left;
+    margin-right: 30px;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 0px 4px black;
+    text-align: center;
+    line-height: 70px;
+    transition: all 0.2s;
+}
+.box:active,#start:active{
+    background-color: cyan;
+    color: darkcyan;
+}
+#start{
+    width: 80px;
+    padding: 10px;
+    background-color: peachpuff;
+    margin: 0 auto;
+    font-weight: bold;
+
+    border-radius: 3px;
+    cursor: pointer;
+    
+    text-align: center;
+    position: relative;
+    transition: all 0.2s;
+}
+#level{
+    width: 300px;
+    height: 70px;
+    padding: 10px;
+    background-color: oldlace;
+    border-color: black;
+    margin:10px auto;
+
+    border-radius: 3px;
+   
+ text-align: center;
+
+    position: relative;
+    transition: all 0.2s;
+    display: none;
+}
+
+#easy{
+     width: 70px;
+    height: 10px;
+    background-color: azure;
+    color: crimson;
+    float: left;
+    margin-right: 30px;
+   
+    cursor: pointer;
+   
+    text-align: center;
+    line-height: 70px;
+    transition: all 0.2s;
+}
+#easy:active{
+    background-color: yellowgreen;
+    color: darkcyan;
+}
+#medium{
+     width: 70px;
+    height: 10px;
+    background-color: azure;
+   color: crimson;
+    float: left;
+    margin-right: 30px;
+    
+    cursor: pointer;
+   
+    text-align: center;
+    line-height: 70px;
+    transition: all 0.2s;
+}
+#hard{
+     width: 70px;
+    height: 10px;
+    background-color: azure;
+    float: left;
+    margin-right: 30px;
+  
+    cursor: pointer;
+    color: crimson;
+    text-align: center;
+    line-height: 70px;
+    transition: all 0.2s;
+}
+#time{
+    width: 150px;
+    padding: 10px;
+    position: absolute;
+    top:395px
+    left: 400px;
+    background-color: chartreuse;
+    display: none;
+    
+    
+}
+#gameover{
+    height: 280px;
+    width: 400px;
+    background: linear-gradient(orange,white);
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    top: 150px;
+    left: 450px;
+    z-index: 2;
+    display: none;
+}
+    
+
+    .footer{
+    height: 20px;
+    background: linear-gradient(white,yellow);
+        text-align: center;
+    color:olive;
+    font-size: 15px;
+    padding: 10px 30px;
+    margin-top: 150px;
+}
+#progress{
+    margin-top: 100px;
+    color: blue;
+}
+#label{
+    background-color: antiquewhite;
+    color: blue;
+}

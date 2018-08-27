@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Maths Game</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes">
+    <link rel="stylesheet" href="quizstyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+</head>
+    <body>
+        <div id="container">
+            <div id="Score">
+            Score:<span id="scorevalue">0</span>
+            
+        </div>
+            <div id="highest">
+                Highest score:<span id="highestscore"> 0 </span>
+            </div>
+        <div id="correct">
+        Correct</div>
+        <div id="wrong">
+        Wrong</div>
+            <div id="question">
+            
+            </div>
+            <div id="instruction">
+                Choose the right answer
+            </div>
+            <div id="choice">
+            <div id="box1" class="box">
+            
+                </div>
+                <div id="box2" class="box">
+                
+                </div>
+                <div id="box3" class="box">
+                
+                </div>
+                <div id="box4" class="box">
+                  
+                </div>
+            </div>
+            <div id="start">
+                Start Game
+            </div>
+            
+            <div id="level">
+                
+                <span id="easy">Easy</span>
+                <span id="medium">Medium</span>
+                <span id="hard">Hard</span>
+            </div>
+            <div id="time">
+            Time Remaining : <span id="timeremain" > 60  </span> sec </div>
+            <div id="gameover">
+                game over
+            </div>
+            <div id="progress">
+                <div id="label">
+                </div>
+            </div>
+                 
+           
+        </div>
+         <footer class="footer" id="foot">
+                <div>
+                <p>tussipandey Copyright &copy; 2018-2020</p>
+                </div>
+            </footer>
+       
+    
+       
+        <script src="quizjavascript.js">
+        </script>
+        
+        
+         <script>
+             $(function(){
+                 $("#easy").click(function(){
+                        $("#level").fadeOut(3000);
+                     $("#time").fadeIn(3000);
+                  
+                     
+                 });
+                 $("#start").click(function(){
+                        $("#level").fadeIn(3000);
+               
+             });
+                
+                
+                  });
+
+        
+        </script>
+        <script>
+            $(function(){
+                $("#progress").progressbar({
+                    value:0
+               });
+                var x=0;
+                 $("#easy").click(function(){
+                     x=0;
+                var progress =setInterval(function(){
+                    x++;
+                    $("#label").text(x+'%');
+                    $("#progress").progressbar("option","value",x);
+                    if(x>99){
+                    clearInterval(progress);
+                }
+                },607);
+            });
+            });
+        </script>
+    </body>
+    </html>
